@@ -29,8 +29,6 @@
   merge = refs/heads/master
 
 [user]
-	name = Patrick Ludwig
-	email = havoc@boldo.com
 	useconfigonly = true
 [credential]
 	helper = osxkeychain
