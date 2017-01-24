@@ -10,3 +10,5 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,inputrc}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
+
+[ -d ".local" ] && [ -f ".local/.bash_profile" ] && source ".local/.bash_profile";

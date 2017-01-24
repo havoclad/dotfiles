@@ -34,7 +34,7 @@ command! MakeTags !ctags -R .
 " - This doesn't help if you want a visual list of tags
 "
 
-" FILE BROWSING
+" FILE BROWSING:
 "
 " Tweaks for browsing
 let g:netrw_banner=0       " disable annoying banner
@@ -50,7 +50,7 @@ let g:netrw_list_hide=',\(^\|\s\s\)\zs\.\S\+'
 " - check |netrw-browse-maps| for more mappings
 "
 
-" Paste into osx without funkiness
+" PASTE INTO OSX WITHOUT FUNKINESS:
 " From http://stackoverflow.com/a/7053522/203670
 if &term =~ "xterm.*"
     let &t_ti = &t_ti . "\e[?2004h"
