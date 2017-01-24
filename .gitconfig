@@ -29,6 +29,9 @@
   merge = refs/heads/master
 
 [user]
+# Don't user user.name and user.email here
+# Force a per repo configuration to ensure work and home values 
+#    get set appropriately
 	useconfigonly = true
 [credential]
 	helper = osxkeychain
