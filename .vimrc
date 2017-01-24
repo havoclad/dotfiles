@@ -50,6 +50,8 @@ let g:netrw_list_hide=',\(^\|\s\s\)\zs\.\S\+'
 " - check |netrw-browse-maps| for more mappings
 "
 
+# Paste into osx without funkiness
+# From http://stackoverflow.com/a/7053522/203670
 if &term =~ "xterm.*"
     let &t_ti = &t_ti . "\e[?2004h"
     let &t_te = "\e[?2004l" . &t_te
