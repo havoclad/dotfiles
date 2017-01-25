@@ -15,7 +15,7 @@ cd ~/.vim/bundle
   then 
     pushd vim-fugitive && git pull --quiet && popd
   else
-    git clone git://github.com/tpope/vim-fugitive.git
+    git clone http://github.com/tpope/vim-fugitive.git
   fi
 	vim -u NONE -c "helptags vim-fugitive/doc" -c q
 )
