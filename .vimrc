@@ -95,6 +95,10 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
+" when indenting with '>' use 2 spaces width
+set shiftwidth=2
+" On pressing tab, insert 2 spaces
+set expandtab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -110,6 +114,8 @@ set laststatus=2
 set mouse=a
 "set statusline=%f\ %h%w%m%r\ %{fugitive#statusline()}
 "set statusline+=%=%(%l,%c%V\ %=\ %P%)
+"
+"set autoindent
 
 " Show the cursor position
 set ruler
