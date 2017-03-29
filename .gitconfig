@@ -37,3 +37,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = ~/.cvsignore
+[diff]
+	submodule = log
+[status]
+	submoduleSummary = true
