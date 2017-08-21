@@ -1,17 +1,12 @@
 execute pathogen#infect()
 
 set nocompatible
-syntax enable
-filetype plugin indent on
 
 " Finding Files:
 "
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
-
-" Display all matching files when we tab complete
-set wildmenu
 
 " NOW WE CAN:
 " - Hit tab to :find by partial match
@@ -93,12 +88,14 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+" No longer needed, using vim-sleuth to heuristaclly determine the tablike
+" values
 " Make tabs as wide as two spaces
-set tabstop=2
+"set tabstop=2
 " when indenting with '>' use 2 spaces width
-set shiftwidth=2
+"set shiftwidth=2
 " On pressing tab, insert 2 spaces
-set expandtab
+"set expandtab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -106,10 +103,6 @@ set list
 set hlsearch
 " Ignore case of searches
 set ignorecase
-" Highlight dynamically as pattern is typed
-set incsearch
-" Always show status line
-set laststatus=2
 " Enable mouse in all modes
 set mouse=a
 "set statusline=%f\ %h%w%m%r\ %{fugitive#statusline()}
@@ -117,8 +110,6 @@ set mouse=a
 "
 "set autoindent
 
-" Show the cursor position
-set ruler
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
@@ -132,8 +123,6 @@ if exists("&relativenumber")
   set relativenumber
   au BufReadPost * set relativenumber
 endif
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
 
 " Automatically populate powerline symbols
 let g:airline_powerline_fonts=1
