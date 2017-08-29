@@ -11,4 +11,5 @@ https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare
 * tmux
 * git
 
+# For vim
 Pathogen
