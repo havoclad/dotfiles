@@ -125,7 +125,9 @@ if exists("&relativenumber")
 endif
 
 " Automatically populate powerline symbols
-let g:airline_powerline_fonts=1
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 " Automatic commands
 if has("autocmd")
