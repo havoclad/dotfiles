@@ -8,6 +8,8 @@ set nocompatible
 " Provides tab-completion for all file-related tasks
 set path+=**
 
+let g:powerline_pycmd = 'py3'
+
 " NOW WE CAN:
 " - Hit tab to :find by partial match
 " - Use * to make it fuzzy

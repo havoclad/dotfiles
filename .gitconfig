@@ -43,3 +43,5 @@
 	submoduleSummary = true
 [fetch]
 	recurseSubmodules = on-demand
+[pull]
+	rebase = false
