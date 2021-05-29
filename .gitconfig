@@ -33,6 +33,7 @@
 # Force a per repo configuration to ensure work and home values 
 #    get set appropriately
 	useConfigOnly = true
+	signingkey = AE59C18DB457C273
 [credential]
 	helper = osxkeychain
 [core]
@@ -45,3 +46,7 @@
 	recurseSubmodules = on-demand
 [pull]
 	rebase = false
+[commit]
+	gpgsign = true
+[tag]
+	forceSignAnnotated = true
