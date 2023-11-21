@@ -8,7 +8,7 @@ set nocompatible
 " Provides tab-completion for all file-related tasks
 set path+=**
 
-let g:powerline_pycmd = 'py3'
+"let g:powerline_pycmd = 'py3'
 
 " NOW WE CAN:
 " - Hit tab to :find by partial match
@@ -127,9 +127,9 @@ if exists("&relativenumber")
 endif
 
 " Automatically populate powerline symbols
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 
 " Automatic commands
 if has("autocmd")

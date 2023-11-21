@@ -1,6 +1,7 @@
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH
+PATH=/opt/homebrew/bin:$PATH
 export PATH
 
 # Bash history fo eva
@@ -18,10 +19,10 @@ unset file
 
 [ -d ".local" ] && [ -f ".local/.bash_profile" ] && source ".local/.bash_profile";
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 
-powerline-daemon -q
+#powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 #. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-. /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+#. /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
